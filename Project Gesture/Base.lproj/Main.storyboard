@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLs-ZW-fLq" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="62" y="81" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="C4D-Bc-xCd" appends="YES" id="QKg-Xo-O64"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-eR-uxS" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="241" y="184" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GMp-qJ-GDa" appends="YES" id="eIi-AM-PzA"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-P9-CTp" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="62" y="281" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="txx-2F-hY5" appends="YES" id="LC0-A1-3ya"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5p-AA-qqw" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="62" y="498" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="npF-GI-efR" appends="YES" id="p7x-Ef-R66"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S0T-QP-wc2" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="257" y="600" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BXY-Ph-5ZJ" appends="YES" id="U3D-Bc-kPA"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLP-CA-JNy" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="127" y="732" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HtB-FV-VTx" appends="YES" id="xeT-FF-OVD"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZc-bo-xSk" customClass="CircleView" customModule="Project_Gesture" customModuleProvider="target">
+                                <rect key="frame" x="257" y="383" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4lP-LK-fpb" appends="YES" id="s1H-nv-UdG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleView1" destination="cLs-ZW-fLq" id="VRd-Ek-ycH"/>
+                        <outlet property="circleView2" destination="Apj-eR-uxS" id="Rdh-tX-jbi"/>
+                        <outlet property="circleView3" destination="Uvb-P9-CTp" id="26w-ku-hqW"/>
+                        <outlet property="circleView4" destination="FZc-bo-xSk" id="dOa-lq-2Lf"/>
+                        <outlet property="circleView5" destination="X5p-AA-qqw" id="znM-j8-5bZ"/>
+                        <outlet property="circleView6" destination="S0T-QP-wc2" id="Whd-3K-kRe"/>
+                        <outlet property="circleView7" destination="RLP-CA-JNy" id="zGu-57-xsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="C4D-Bc-xCd">
+                    <connections>
+                        <action selector="panAction1:" destination="BYZ-38-t0r" id="Cz7-b6-QJq"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GMp-qJ-GDa">
+                    <connections>
+                        <action selector="panAction2:" destination="BYZ-38-t0r" id="pSa-cc-EyZ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="txx-2F-hY5">
+                    <connections>
+                        <action selector="panAction3:" destination="BYZ-38-t0r" id="XNh-cr-ygO"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="4lP-LK-fpb">
+                    <connections>
+                        <action selector="panAction4:" destination="BYZ-38-t0r" id="pRj-Na-jIi"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="npF-GI-efR">
+                    <connections>
+                        <action selector="panAction5:" destination="BYZ-38-t0r" id="GIu-IA-wci"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BXY-Ph-5ZJ">
+                    <connections>
+                        <action selector="panAction6:" destination="BYZ-38-t0r" id="w3T-ZE-tpC"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HtB-FV-VTx">
+                    <connections>
+                        <action selector="panAction7:" destination="BYZ-38-t0r" id="ddl-EU-P6G"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-23" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
