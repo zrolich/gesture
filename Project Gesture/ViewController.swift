@@ -60,9 +60,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView1!.frame.origin.y) == value {
-                            circleView1.isHidden = true
-                            changeCircleView(circleView: item)
-                        
+                    circleView1.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -95,9 +95,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView2!.frame.origin.y) == value {
-                            circleView2.isHidden = true
-                            changeCircleView(circleView: item)
-                       
+                    circleView2.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -131,9 +131,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView3!.frame.origin.y) == value {
-                            circleView3.isHidden = true
-                            changeCircleView(circleView: item)
-                        
+                    circleView3.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -164,9 +164,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView4!.frame.origin.y) == value {
-                            circleView4.isHidden = true
-                            changeCircleView(circleView: item)
-                        
+                    circleView4.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -197,9 +197,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView5!.frame.origin.y) == value {
-                            circleView5.isHidden = true
-                            changeCircleView(circleView: item)
-                       
+                    circleView5.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -230,9 +230,9 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView6!.frame.origin.y) == value {
-                            circleView6.isHidden = true
-                            changeCircleView(circleView: item)
-             
+                    circleView6.isHidden = true
+                    changeCircleView(circleView: item)
+                    
                 }
             }
         }
@@ -263,25 +263,23 @@ class ViewController: UIViewController {
             }
             for value in Int (item.frame.minY)...Int(item.frame.maxY){
                 if Int (circleView7!.frame.origin.y) == value {
-                            circleView7.isHidden = true
-                            changeCircleView(circleView: item)
-                       
+                    circleView7.isHidden = true
+                    changeCircleView(circleView: item)
                 }
             }
         }
     }
     
-
+    
     
     func changeCircleView(circleView: CircleView ) {
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
-        circleView.workingView.backgroundColor = .red
-        circleView.frame.size.height = circleView.frame.size.height * 2
-        circleView.frame.size.width = circleView.frame.size.width * 2
-        circleView.layer.cornerRadius = circleView.frame.size.width/2
-        circleView.clipsToBounds = true
-        
-    })
-                       }
+            circleView.workingView.backgroundColor = .red
+            circleView.frame.size.height = circleView.frame.size.height * 2
+            circleView.frame.size.width = circleView.frame.size.width * 2
+            circleView.layer.cornerRadius = circleView.frame.size.width/2
+            circleView.clipsToBounds = true
+        })
+    }
 }
 
