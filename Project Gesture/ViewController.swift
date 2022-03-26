@@ -274,13 +274,14 @@ class ViewController: UIViewController {
 
     
     func changeCircleView(circleView: CircleView ) {
+        UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
         circleView.workingView.backgroundColor = .red
         circleView.frame.size.height = circleView.frame.size.height * 2
         circleView.frame.size.width = circleView.frame.size.width * 2
         circleView.layer.cornerRadius = circleView.frame.size.width/2
         circleView.clipsToBounds = true
         
-    }
-    
+    })
+                       }
 }
 
